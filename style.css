@@ -108,7 +108,7 @@ body{
 
     color: #9F9F9F;
 
-    background: linear-gradient(270.06deg, #DADADA 20.97%, #9F9F9F 99.92%);;
+    background: linear-gradient(270.06deg, #DADADA 20.97%, #9F9F9F 99.92%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -183,6 +183,8 @@ body{
     height: 241.38px;
     align-self: center;
 
+    filter: drop-shadow(0px 20px 4px rgba(137, 137, 137, 0.25));
+
 }
 
 .vitrine-details{
@@ -210,6 +212,51 @@ body{
     cursor: pointer;
     transition: 0.3s;
 }
+
+/* Fim da segunda seção */
+
+/* Terceira seção */
+
+.publi-one-container{
+    width: 1200px;
+    max-width: 100%;
+    margin: 150px auto;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.publi-one-text h2{
+    font-family: Gilroy;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+    margin-top: 30px;
+
+    color: #9F9F9F;
+
+    background: linear-gradient(270.06deg, #DADADA 20.97%, #9F9F9F 99.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.publi-one-text p {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 28px;
+
+    margin-top: 50px;
+    max-width: 481px;
+    color: #1F1F1F;
+}
+
+.publi-one-img img {
+    width: 604px;
+    height: 550px;
+}
+
+/* Fim da Terceira seção */
+
 /* About-tenis */
 
 .run-tenis{
