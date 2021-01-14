@@ -5,14 +5,227 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-ul{
-    list-style: none;
-}
-
 body{
     font-family: 'Lato', sans-serif;
 }
 
+/* Barra de navegação superior */
 
- 
+.container{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 32px 0;
+}
+
+.container-flex{
+    display: flex;
+}
+
+.container-flex-spaced{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title{
+    color: #1F1F1F;
+    font-size: 20px;
+    line-height: 28px;
+}
+.header li{
+    list-style: none;
+    display: inline-flex;
+
+}
+
+.header-nav{
+    margin-left: 100px;
+}
+.header-list-item a{
+    color: #1F1F1F;
+    text-decoration: none;
+    padding: 12px;
+    margin: 0 12px;
+}
+
+
+.header-search{
+    appearance: none;
+    -webkit-appearance: none;
+
+    outline: none;
+    
+    background: #F2F2F2;
+    border: none;
+    border-radius: 50px;
+    min-width: 232px;
+    padding: 16px 20px 16px 40px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    vertical-align: middle;
+    background: url('./img/search.svg') #F2F2F2 no-repeat center;
+    background-position: 10px;
+    border-radius: 50px;
+    margin-left: 24px;
+
+    vertical-align: middle;
+    
+}
+
+.header-cart{
+    width: 52px;
+    height: 52px;
+    display: inline-flex;
+    align-items: center;
+    background: url('img/carrinho.png') #F2F2F2 no-repeat center;
+    vertical-align: middle;
+    border-radius: 50px;
+    margin-left: 24px;
+}
+
+/* Fim do Menu Desktop */
+
+/* first section */
+
+.prelude-container{
+    width: 1200px;
+    max-width: 100%;
+    margin: 51px auto 150px auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.prelude-title h2 {
+    font-family: Gilroy;
+    font-size: 6.5em;
+    font-weight: bold;
+    width: 581px;
+    line-height: 104px;
+
+    color: #9F9F9F;
+
+    background: linear-gradient(270.06deg, #DADADA 20.97%, #9F9F9F 99.92%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.prelude-title p{
+    color: #292828;
+    width: 100%;
+    max-width: 475px;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 200;
+    margin: 24px 0;
+}
+
+.prelude-button{
+    margin-top: 80px;
+    padding: 30px 90px 30px 40px;
+    border: 2px solid #1F1F1F;
+    background: none;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-size: 20px;
+    line-height: 28px;
+    background: url('./img/add.svg') no-repeat right;
+    background-position: 16rem;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.vitrine-tenis img{
+    width: 581px;
+    height: 581px;
+}
+
+/* Fim da primeira seção */
+
+
+/* Segunda seção */
+
+.vitrine-container {
+
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    background: #F3F3F3;
+    border-radius: 8px;
+}
+
+.vitrine-title{
+    margin-top: 62px;
+    color: #1F1F1F;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.vitrine-list{
+    display: flex;
+    list-style: none;
+    align-self: center;
+
+    margin: 60px 0 32px 0;
+}
+
+.vitrine-image{
+    width: 464px;
+    height: 241.38px;
+    align-self: center;
+
+}
+
+.vitrine-details{
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #1F1F1F;
+}
+
+.vitrine-button{
+
+    align-self: center;
+    margin: 60px 0;
+    padding: 20px 90px;
+    border: 2px solid #1F1F1F;
+    background: none;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-size: 20px;
+    line-height: 28px;
+
+
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* About-tenis */
+
+.run-tenis{
+        background: url('./img/arrow.png') no-repeat;
+        /* background-repeat: no-repeat;
+        background-size: cover; */
+        /* width: 1920px; */
+        height: 700px;
+    
+    }
+    .texto p{
+        font-weight: 700;
+        font-size: 90px;
+        color: white;
+        margin-left: 20px;
+    }
+}
+
+

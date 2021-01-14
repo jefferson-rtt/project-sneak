@@ -5,54 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneak.</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-
+    
 </head>
 <body>
-    <header class="navbar">
-        <h1>SNEAK.</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Masculino</a></li>
-                <li><a href="#">Feminino</a></li>
-                <li><a href="#">Novidades</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Coleções</a></li>
-            </ul>
-        </nav>
-        <div>
-            <input type="text" placeholder="Procurar">
-            <div>
-                <img src="img/carrinho.png">
+    <header class="header">
+        <div class="container container-flex container-flex-spaced">
+            <h1 class="header-title">SNEAK.</h1>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-list-item"><a href="#">Masculino</a></li>
+                    <li class="header-list-item"><a href="#">Feminino</a></li>
+                    <li class="header-list-item"><a href="#">Novidades</a></li>
+                    <li class="header-list-item"><a href="#">Ofertas</a></li>
+                    <li class="header-list-item"><a href="#">Coleções</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <input class="header-search" type="text" placeholder="Procurar">
+                <div class="header-cart">
+                    <!-- <img src="img/carrinho.png"> -->
+                </div>
             </div>
         </div>
     </header>
 
     <main class="main">
         <section class="section-main">
-            <div>
-                <h2>SNEAK. <br />Ultra light</h2>
-                <p>Os tênis SNEAK foram criados especificamente para treinos em circuito, sejam aulas de fitness online em casa ou sua propia rotina de treinos diaros.</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-            <div class="vitrine-tenis">
-                <img src="img/tenis.png">
+            <div class="prelude-container">
+                <div class="prelude-title">
+                    <h2>SNEAK. <br />Ultra light</h2>
+                    <p>Os tênis SNEAK foram criados especificamente para treinos em circuito, sejam aulas de fitness online em casa ou sua propia rotina de treinos diaros.</p>
+                    <button class="prelude-button">Adicionar ao Carrinho</button>
+                </div>
+                <div class="vitrine-tenis">
+                    <img src="./img/Graphic 1.png" alt="">
+                </div>
             </div>
         </section>
 
-        <aside class="vitrine">
-            <h2>Corrida - Masculino</h2>
-            <ul>
-                <li>Branco</li>
-                <li>Dourado</li>
-                <li>Cinza</li>
-                <li>Grafite</li>
-            </ul>
-            <img src="img/tenis-branco.png" alt="Tênis Branco">
-            <span>Branco</span>
-            <button>Adicionar ao Carrinho</button>
-        </aside>
+        <section class="vitrine">
+            <div class="vitrine-container">
+                <h2 class="vitrine-title">Corrida - Masculino</h2>
+                <ul class="vitrine-list">
+                    <li class="vitrine-list-item">Branco</li>
+                    <li class="vitrine-list-item">Dourado</li>
+                    <li class="vitrine-list-item">Cinza</li>
+                    <li class="vitrine-list-item">Grafite</li>
+                </ul>
+                <img class="vitrine-image" src="img/tenis-branco.png" alt="Tênis Branco">
+                <span class="vitrine-details">Branco</span>
+                <button class="vitrine-button" type="submit">Adicionar ao Carrinho</button>
+            </div>
+        </section>
 
         <section class="publi-one">
             <div>
@@ -86,7 +91,7 @@
         </section>
 
         <aside class="run-tenis">
-            <img src="img/arrow.png">
+            <!-- <img src="img/arrow.png"> -->
             <span>Corra<br> Como se o mundo<br> dependesse de você</span>
         </aside>
 
