@@ -1,3 +1,5 @@
-Acompanhado do Módulo 03<br>
-Title: Marcação de Tags do Projeto Sneak.<br>
-by Mentorama
+<h1> project-sneak</h1>
+
+Criado no Módulo 03<br>
+Designed by Mentorama<br />
+Create by <a href="https://linkedin.com/in/jeffferson-nunes/">Jefferson Nunes </a>

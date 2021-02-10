@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneak.</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container container-flex container-flex-spaced">
             <h1 class="header-title">SNEAK.</h1>
             <nav class="header-nav">
@@ -18,7 +19,7 @@
                     <li class="header-list-item"><a href="#">Feminino</a></li>
                     <li class="header-list-item"><a href="#">Novidades</a></li>
                     <li class="header-list-item"><a href="#">Ofertas</a></li>
-                    <li class="header-list-item"><a href="#">Coleções</a></li>
+                    <li class="header-list-item"><a href="#vitrine">Coleções</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
@@ -49,9 +50,9 @@
                 <h2 class="vitrine-title">Corrida - Masculino</h2>
                 <ul class="vitrine-list">
                     <li class="vitrine-list-item">Branco</li>
-                    <li class="vitrine-list-item">Dourado</li>
-                    <li class="vitrine-list-item">Cinza</li>
-                    <li class="vitrine-list-item">Grafite</li>
+                    <li class="vitrine-list-item">Natural</li>
+                    <li class="vitrine-list-item">Preto/Branco</li>
+                    <li class="vitrine-list-item">Preto</li>
                 </ul>
                 <img class="vitrine-image" src="img/tenis-branco.png" alt="Tênis Branco">
                 <span class="vitrine-details">Branco</span>
@@ -59,100 +60,107 @@
             </div>
         </section>
 
-        <section class="publi-one">
-            <div class="publi-one-container">
-                <div class="publi-one-text">
-                    <h2>Leveza e agilidade</h2>
-                    <p>A construção ligeira de espuma e malha não te torna lento ao fazer os exercicios de agilidade. Um «burpee break» na parte frontal do pé torna-o suficiente flexível para fazer a prancha ou  o Mountain Climber.</p>
-                </div>
-                <div class="publi-one-img">
-                    <img src="img/leveza-e-agilidade.png" alt="Tênis Hylo">
-                </div>
+        <section class="publi-one-container">
+            <div class="publi-text__conteiner">
+                <h2 class="publi-text">Leveza e agilidade</h2>
+                <p class="publi-text__pr">A construção ligeira de espuma e malha não te torna lento ao fazer os exercicios de agilidade. Um «burpee break» na parte frontal do pé torna-o suficiente flexível para fazer a prancha ou  o Mountain Climber.</p>
+            </div>
+            <div class="publi-img">
+                <img src="img/leveza-e-agilidade.png" alt="Tênis Hylo">
             </div>
         </section>
 
-        <section class="publi-two">
-            <div>
-                <img src="img/amortecimento-imediato.png" alt="Amortecimento Imediato">
-                <img src="img/amortecimento-imediato2.png" alt="Amortecimento Imediato">
+        <section class="publi-two-container">
+            <div class="publi-img__2x">
+                <img class="img__1x" src="img/amortecimento-imediato.png" alt="Amortecimento Imediato">
+                <img class="img__2x" src="img/amortecimento-imediato2.png" alt="Amortecimento Imediato">
             </div>
-            <div>
-                <h2>Amortecimento imediato</h2>
-                <p>A espuma grossa sob pé absorbe o impacto e retorna a energía ao correr com joelhos altos e ao fazer salos com caixa. O suporte de arco na parte média do pé garante conforto durante o treino entero.</p>
+            <div class="publi-two-text">
+                <h2 class="publi-text">Amortecimento imediato</h2>
+                <p class="publi-text__pr">A espuma grossa sob pé absorbe o impacto e retorna a energía ao correr com joelhos altos e ao fazer salos com caixa. O suporte de arco na parte média do pé garante conforto durante o treino entero.</p>
             </div>
         </section>
 
-        <section class="publi-three">
-            <div>
-                <h2>Sensação de<br>estabilização</h2>
-                <p>O outrigger — a projeção lateral — estabiliza o pé ao fazer os movimentos laterais, como por exemplo o Skater Squat.</p>
+        <section class="publi-three-container">
+            <div class="publi-three-text">
+                <h2 class="publi-text">Sensação de<br>estabilização</h2>
+                <p class="publi-text__pr">O outrigger — a projeção lateral — estabiliza o pé ao fazer os movimentos laterais, como por exemplo o Skater Squat.</p>
             </div>
-            <div>
+            <div class="publi-img">
                 <img src="img/sensação-de-estabilização.png" alt="sensação de estabilização">
             </div>
         </section>
 
         <aside class="run-tenis">
-            <!-- <img src="img/arrow.png"> -->
-            <span>Corra<br> Como se o mundo<br> dependesse de você</span>
+            <p><img src="./img/seta.png">
+                Corra<br> Como se o mundo<br> dependesse de você
+            </p>
         </aside>
 
-        <section class="mapa">
-            <div>
-                <img src="img/img-mapa.png" alt="Nosso Endereço">
+        <section class="contact-container">
+            <div class="form-contact__img">
+                <img src="./img/img-mapa.png" alt="mapa">
             </div>
-            <div class="contact">
-                <h3>Contate-nos</h3>
-                <form>
-                    <input type="text" placeholder="Nome">
-                    <input type="email" placeholder="E-mail">
-                    <textarea placeholder="Comentário"></textarea>
-                    <label>
-                        <input type="checkbox">
-                        Concordo com a politica de privacidade
-                    </label>
-                    <button>Enviar</button>
-                </form>
-            </div>
+            <form class="box">
+                <h2 class="box-title">Contate-nos</h2>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="E-mail" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Comentários" required></textarea>
+                <div class="box-check">
+                    <input id="box" type="checkbox">
+                    <label for="box">Concordo com a política de privacidade</label>
+                </div>
+                    
+                <button>Enviar</button>
+            </form>
         </section>
     </main>
 
-    <footer>
-        <h3>SNEAK.</h3>
-        <div class="column-one">
-            <ul>
-                <li>Sobre a SNEAK</li>
-                <li><a href="#">Novidades</a></li>
-                <li><a href="#">Carreiras</a></li>
-                <li><a href="#">Para investidores</a></li>
-                <li><a href="#">Cuidado com o meio ambiente</a></li>
-            </ul>
+    <footer class="footer">
+        <div class="footer-container">
+            <h3 class="footer-title"> <a href="#header">SNEAK.</a></h3>
+            <div class="footer-column column-one">
+                <ul>
+                    <li class="footer-title">Sobre a SNEAK</li>
+                    <li class="footer-title__item"><a href="#">Novidades</a></li>
+                    <li class="footer-title__item"><a href="#">Carreiras</a></li>
+                    <li class="footer-title__item"><a href="#">Para investidores</a></li>
+                    <li class="footer-title__item"><a href="#">Cuidado com o meio ambiente</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column column-two">
+                <ul>
+                    <li class="footer-title">Ajuda</li>
+                    <li class="footer-title__item"><a href="#">Status do Pedido</a></li>
+                    <li class="footer-title__item"><a href="#">Entregas e Frete</a></li>
+                    <li class="footer-title__item"><a href="#">Trocas e Devoluções</a></li>
+                    <li class="footer-title__item"><a href="#">Opções de Pagamento</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column column-three">
+                <ul class="column-three">
+                    <li class="footer-title">Redes Sociais</li>
+                    <div class="column-three-midia">
+                        <li class="footer-title__item"><a href="https://www.instagram.com" target="_black">
+                            <img src="img/Instagram.png" alt="Instagram">
+                        </a></li>
+                        <li class="footer-title__item"><a href="https://www.facebook.com" target="_blank">
+                            <img src="img/Facebook.png" alt="Facebook">
+                        </a></li>
+                        <li class="footer-title__item"><a href="https://www.twitter.com" target="_blank">
+                            <img src="img/Twitter.png" alt="Twitter">
+                        </a></li>
+                    </div>
+                </ul>
+            </div>
         </div>
-
-        <div class="column-two">
-            <ul>
-                <li>Ajuda</li>
-                <li><a href="#">Status do Pedido</a></li>
-                <li><a href="#">Entregas e Frete</a></li>
-                <li><a href="#">Trocas e Devoluções</a></li>
-                <li><a href="#">Opções de Pagamento</a></li>
-            </ul>
-        </div>
-
-        <div class="column-three">
-            <ul>
-                <li>Redes Sociais</li>
-                <li><a href="https://www.instagram.com" target="_black">
-                    <img src="img/Instagram.png" alt="Instagram">
-                </a></li>
-                <li><a href="https://www.facebook.com" target="_blank">
-                    <img src="img/Facebook.png" alt="Facebook">
-                </a></li>
-                <li><a href="https://www.twitter.com" target="_blank">
-                    <img src="img/Twitter.png" alt="Twitter">
-                </a></li>
-            </ul>
+        <div class="footer-corpyright">
+            CREATE BY <a href="https://www.linkedin.com/in/jefferson-nunes/" target="_blank">Jefferson Nunes</a> | DESIGNED BY <a href="https://mentorama.co" target="_blank"><strong>MENTORAMA</strong></a>
         </div>
     </footer>
+
+    <script src="./main.js"></script>
 </body>
 </html>
